@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario con Gráficos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Formulario de Ventas por Mes</h1>
+    <form id="ventasForm">
+      <label for="meses">Meses (separados por comas):</label>
+      <input type="text" id="meses" placeholder="Enero, Febrero, Marzo" required>
+
+      <label for="ventas">Ventas (separadas por comas):</label>
+      <input type="text" id="ventas" placeholder="1000, 2000, 3000" required>
+
+      <button type="button" onclick="generarGrafico()">Generar Gráfico</button>
+    </form>
+
+    <h2>Gráfico Generado</h2>
+    <canvas id="graficoVentas" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
